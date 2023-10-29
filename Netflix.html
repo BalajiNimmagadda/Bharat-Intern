@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix-like Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 120px;
+            margin: 0 20px;
+        }
+
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header ul li {
+            margin-right: 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero {
+            background-image: url('https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png'); /* Add an actual image URL here */
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .movie-item {
+            flex: 1 0 calc(33.333% - 20px);
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .movie-img {
+            background-image: url('movie1.jpg'); /* Add an actual movie image URL here */
+            background-size: cover;
+            height: 200px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .movie-description {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png" alt="Netflix Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Netflix</h1>
+        <p>Watch amazing TV shows and movies anytime, anywhere.</p>
+        <div class="call-to-action">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Popular Movies</h2>
+        <div class="movie-list">
+            <div class="movie-item">
+                <div class="https://cdn.123telugu.com/content/wp-content/uploads/2023/09/LEO-6.jpg"></div>
+                <div class="movie-description">
+                    <h3>Leo</h3>
+                    <p>
+Lokesh Kanagaraj,
+Joseph VijaySanjay , DuttTrisha Krishnan
+</p>
+                </div>
+            </div>
+            <div class="movie-item">
+                <div class="https://akm-img-a-in.tosshub.com/indiatoday/images/story/media_bank/202310/ranbir-kapoor--rashmika-mandanna-lock-lips-in-new-animal-poster-103807332-3x4.jpg?VersionId=J8e_Z5hd5U.C_Wl8c3O6mQvWF9gEPMWH"></div>
+                <div class="movie-description">
+                    <h3>Animal</h3>
+                    <p>
+Sandeep Reddy Vanga,
+Ranbir Kapoor,Triptii Dimri , Anil Kapoor.</p>
+                </div>
+            </div>
+            <!-- Add more movie items here -->
+        </div>
+    </div>
+</body>
+</html>
